@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #7f1d1d;
+  --color-primary-hover: #641616;
+  --color-primary-light: #fbeaec;
+  --color-secondary: #c89b3c;
+  --color-secondary-light: #fff4d6;
+  --color-secondary-dark: #7a5418;
+  --color-background: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-sidebar: #101828;
+  --color-sidebar-active: #7f1d1d;
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-success: #15803d;
+  --color-warning: #b45309;
+  --color-error: #b91c1c;
+  --color-accent: #d6a84f;
+  --color-badge: #fff7df;
+}
+
+:root {
+  --code-bg: var(--color-primary-light);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--color-text-secondary);
+  background: var(--color-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
